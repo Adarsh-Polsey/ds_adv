@@ -8,7 +8,7 @@ import os
 
 print(os.path.dirname(os.path.abspath(__file__)))
 def func():
-    model=joblib.load(open("linear_regression_model.joblib"))
+    model=joblib.load(open("linear_regression_model.joblib","rb"))
     st.title("Sales prediction app")
 
     TV=st.number_input("TV adv budget",min_value=0.0)
