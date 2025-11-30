@@ -5,7 +5,7 @@ import streamlit as st
 
 import os
 
-
+print("HEllo welcomeee")
 print(os.path.dirname(os.path.abspath(__file__)))
 def func():
     model=joblib.load(open("linear_regression_model.joblib","rb"))
