@@ -3,7 +3,7 @@ import numpy as np
 import joblib
 import streamlit as st
 
-model=joblib.load(open("/linear_regression_model.joblib"))
+model=joblib.load(open("linear_regression_model.joblib"))
 st.title("Sales prediction app")
 
 TV=st.number_input("TV adv budget",min_value=0.0)
