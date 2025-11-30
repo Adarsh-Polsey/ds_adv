@@ -3,16 +3,20 @@ import numpy as np
 import joblib
 import streamlit as st
 
-model=joblib.load(open("ds_adv/linear_regression_model.joblib"))
-st.title("Sales prediction app")
+import os
 
-TV=st.number_input("TV adv budget",min_value=0.0)
-Radio=st.number_input("Radio adv budget",min_value=0.0)
-Newspaper=st.number_input("Newspaper adv budget",min_value=0.0)
+print(os.path.dirname(os.path.abspath(__file__)))
+
+# model=joblib.load(open("ds_adv/linear_regression_model.joblib"))
+# st.title("Sales prediction app")
+
+# TV=st.number_input("TV adv budget",min_value=0.0)
+# Radio=st.number_input("Radio adv budget",min_value=0.0)
+# Newspaper=st.number_input("Newspaper adv budget",min_value=0.0)
 
 
-if st.button('predict sales'):
-    input=np_array[[TV,Radio,Newspaper]]
-    prediction=model.predict(input_data)[0]
-    st.success(f"predict sales:{prediction:.2f}")
+# if st.button('predict sales'):
+#     input=np_array[[TV,Radio,Newspaper]]
+#     prediction=model.predict(input_data)[0]
+    # st.success(f"predict sales:{prediction:.2f}")
     
