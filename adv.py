@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import joblib
-import streamlib as st
+import streamlit as st
 
 model=joblib.load(open("linear_regression_model.joblib"))
 st.title("Sales prediction app")
